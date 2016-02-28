@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <head>
+        <title>Microdata</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/grid.css">
+    </head>
+
+    <body>
+
+        <!-- <ul class="instruction">
+            <li>Inclure votre grille pour le Responsive</li>
+            <li>Baliser le texte</li>
+            <li>Rendre la page accessible</li>
+            <li>Ajouter des microdatas pour le SEO</li>
+        </ul> -->
+
+        <h1>Microdatas</h1>
+
+        <main class="grid">
+
+            <article itemscope itemtype="http://schema.org/VideoGame" class="col col-large-12 col-small-12">
+
+                <figure>
+                    <img itemprop="image" src="img/mi.jpg" alt="">
+                    <figcaption itemprop="name">Monkey Island</figcaption>
+                </figure>
+
+                <p>
+                    Monkey Island est une série de jeux vidéo d'aventure créée par <span itemprop="creator">LucasArts</span> (alors appelée LucasFilm Games). Le créateur de l'univers de Monkey Island et ses personnages est <span itemprop="author">Ron Gilbert</span>, qui fut le chef de projet sur les deux premiers opus, mais ne participa pas aux troisième et quatrième épisodes. <br /><br />
+
+                    Un cinquième, développé par <span itemprop="creator">Telltale Games</span>, sous forme de cinq épisodes, a été publié de <time itemprop="startDate" datetime="2009-06-01T00:00">juin</time>. - <time itemprop="endDate" datetime="2016-12-01T00:00">décembre 2009</time>.
+                </p>
+            </article>
+
+            <article itemscope itemtype="http://schema.org/Painting"  class="col col-large-12 col-small-12">
+
+                <figure>
+                    <img itemprop="image" src="img/pissarro.jpg" alt="">
+                    <figcaption itemprop="name">Carrefour à l’Hermitage</figcaption>
+                </figure>
+
+                <p>
+                    Dans le Carrefour à l’Hermitage, quelques silhouettes vaquent à leurs occupations quotidiennes à la croisée des chemins, un ciel lumineux ponctué de nuages rebondis fait vibrer les couleurs de l’automne. La composition est fortement calée entre le rideau d’arbres au bord du sentier sur la droite et  par une grande bâtisse en partie cachée à l’extrémité gauche. <br /><br />
+
+                    La ligne d’horizon est rejetée en haut de la toile par-delà les collines. Ce faisant, <span itemprop="author">Pissarro</span> néglige la question des effets atmosphériques chère à Claude Monet, pour se concentrer  sur la structuration et l’harmonisation des différents plans en zones fortement colorées. <br /><br />
+
+                    Un rythme s’établit entre le vert des parcelles cultivées sur le coteau et les bruns rougeâtres de la terre des labours et du sentier.
+                </p>
+
+                <div>  
+                    <a href="http://www.muma-lehavre.fr/fr/collections/oeuvres-commentees/impressionnisme/pissarro-un-carrefour-lhermitage-pontoise">Source de l'article</a>
+                </div>
+                
+            </article>
+
+            <article itemscope class="col col-large-6 col-small-12">
+
+                <h2 itemprop="creator">Hayao Miyazaki</h2>
+
+                <p>
+                    Hayao Miyazaki (宮崎 駿), né le 5 janvier 1941 à Tokyo, est un dessinateur, un réalisateur de films d'animation japonais et le cofondateur du Studio Ghibli.
+                </p>
+
+                <div itemscope itemtype="http://schema.org/Organization">
+                    <div itemprop="legalName">Studio Ghibli</div>
+                    <div>1-4-25, Kajino-cho</div>
+                    <div itemprop="address">Koganei-shi, 184</div>
+                    <div itemprop="location">Japan</div>
+                    <div itemprop="sameAs">WWW: <a href="http://www.ghibli.jp/">http://www.ghibli.jp/</a></div>
+                    <div itemprop="email">E-MAIL: post@ghibli.jp</div>
+                </div>
+            </article>
+
+            <article itemscope itemtype="http://schema.org/Event" class="col col-large-6 col-small-12">
+
+                <h2 itemprop="name">Iceland Airwaves</h2>
+
+                <p>
+                    Iceland Airwaves est un festival de musique qui se tient chaque année à Reykjavik lors du dernier week-end d'octobre et qui réunit aussi bien des groupes islandais que des groupes étrangers. <br /><br />
+
+                    La première édition a eu lieu en 1999 dans un hangar de l'Aéroport de Reykjavik.
+                </p>
+
+                <div>
+                    <div>
+                        Lieu : <span itemprop="location">Reykjavik, Islande</span>
+                    </div>
+                    <div>
+                        Dates : <time itemprop="startDate" datetime="2016-11-02T00:00">2 nov</time>. - <time itemprop="endDate" datetime="2016-11-06T00:00">6 nov. 2016</time>
+                    </div>
+
+                    Programmation : 
+                    <ul itemprop="review">
+                        <li>PJ HARVEY</li>
+                        <li>KRONOS QUARTET</li>
+                        <li>MÚM</li>
+                        <li>REYKJAVÍKURDÆTUR</li>
+                        <li>JULIA HOLTER</li>
+                        <li>MAMMÚT</li>
+                        <li>STURLA ATLAS</li>
+                    </ul> 
+                </div>
+            </article>
+        </main>
+
+    </body>
+</html>
